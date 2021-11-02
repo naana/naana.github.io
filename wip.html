@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+<script>
+var subjectObject = {
+  "Front-end": {
+    "HTML": ["Links", "Images", "Tables", "Lists"],
+    "CSS": ["Borders", "Margins", "Backgrounds", "Float"],
+    "JavaScript": ["Variables", "Operators", "Functions", "Conditions"]    
+  },
+  "Back-end": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  }
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+  var topicSel = document.getElementById("topic");
+  var chapterSel = document.getElementById("chapter");
+  
+  for (var inc = 0;inc < 100; inc++) {
+    subjectSel.options[subjectSel.options.length] = new Option(inc, inc);
+  }
+}
+</script>
+</head>   
+<body>
+
+<h1>Cascading Dropdown Example</h1>
+
+<form name="form1" id="form1" action="/action_page.php">
+Subjects: <select name="subject" id="subject">
+  </select>
+  <br><br>
+Topics: <select name="topic" id="topic">
+    <option value="" selected="selected">Please select subject first</option>
+  </select>
+  <br><br>
+Chapters: <select name="chapter" id="chapter">
+    <option value="" selected="selected">Please select topic first</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">  
+</form>
+
+<table>
+
+  <tr>
+    <th></th>
+    <th style="background-color:#">Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  </table>
+  
+  Before scoring, each player gains 1 Goodwill for each slot filled on cards in their Guild Hall or on their cards in the Street.
+
+Trained Agents:
+Reputation: 
+Number of Guild cards:
+Slots filled on your Guild cards
+(including Citizens / Patricians): 
+
+Defense Track: 
+
+Number of Tokens: 
+(Coins/Influence/Goodwill)
+
+Points from token: 1/4
+
+1. Most Reputation
+2. Most trained Agents
+3. Most Guild cards
+4. Highest Defense track
+
+Tiebreakers
+1. Most Guild cards.
+2. Most trained Agents.
+3. Combined total of Coins and Influence.
+
+</body>
+</html>
